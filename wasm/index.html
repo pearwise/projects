@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>五子棋</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="static/wasm_exec.js"></script>
+        <script>
+            const go = new Go();
+            WebAssembly.instantiateStreaming(fetch("static/main.wasm"), go.importObject).then((result) => go.run(result.instance));
+        </script>
+        <style>
+            #title {
+                text-align: center;
+            }
+            #chess {
+                display: block;
+                margin: 50px auto;
+                box-shadow: 10px 10px 10px #b9b9b9, -5px -5px 5px #efefef;
+                cursor: pointer;
+            }
+            /* #restartDiv {
+                text-align: center;
+            }
+            #restart {
+                padding: 10px 20px;
+                background-color:aquamarine;
+                border-radius: 36px;
+                color: cornflowerblue;
+                font-weight: 720;
+                cursor: pointer;
+            } */
+            #chess {
+                background-color: antiquewhite;
+                text-align: center;
+            }
+            #playerChess {
+                text-align: center;
+            }
+            #curRole {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h3 id="playerChess"></h3>
+        <h3 id="curRole"></h3>
+        <canvas id="chess" width="450px" height="450px"></canvas>
+        <!-- <div id="restartDiv">
+            <a id="restart">再来一局</a>
+        </div> -->
+        <div></div>
+    </body>
+</html>
