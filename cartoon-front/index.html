@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神游漫画</title>
+    <link rel="stylesheet" href="./static/css/common.css">
+    <link rel="stylesheet" href="./static/css/content.css">
+    <script type="text/javascript" src="./static/js/index.js"></script>
+    <link rel="Shortcut Icon" href="./static/img/favicon.ico"/>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div id="nav">
+        <img src="./static/img/0.jpg" id="header">
+        <select id="type">
+            <option value="fiction">小说</option>
+            <option value="comic">漫画</option>
+        </select>
+        <select id="option">
+            <option value="title">标题</option>
+            <option value="author">作者</option>
+            <option value="comicType">分类</option>
+        </select>
+        <input type="text" name="s" id="keyInput" placeholder="   输入关键字" />
+        <svg width="45px" height="45px" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="searchBtn" onclick="searchFunc()">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3451 15.2003C16.6377 15.4915 16.4752 15.772 16.1934 16.0632C16.15 16.1279 16.0958 16.1818 16.0525 16.2249C15.7707 16.473 15.4456 16.624 15.1854 16.3652L11.6848 12.8815C10.4709 13.8198 8.97529 14.3267 7.44714 14.3267C3.62134 14.3267 0.5 11.2314 0.5 7.41337C0.5 3.60616 3.6105 0.5 7.44714 0.5C11.2729 0.5 14.3943 3.59538 14.3943 7.41337C14.3943 8.98802 13.8524 10.5087 12.8661 11.7383L16.3451 15.2003ZM2.13647 7.4026C2.13647 10.3146 4.52083 12.6766 7.43624 12.6766C10.3517 12.6766 12.736 10.3146 12.736 7.4026C12.736 4.49058 10.3517 2.1286 7.43624 2.1286C4.50999 2.1286 2.13647 4.50136 2.13647 7.4026Z" fill="currentColor"></path>
+        </svg>
+    </div>
+    <!-- 内容结构 -->
+    <div id="content">
+        <!-- 内容展示 -->
+        <ul>
+            <!-- <li>
+                <img src="/static/img/0.jpg">
+                <p>hello 0</p>
+            </li>
+            <li>
+                <img src="/static/img/1.jpg">
+                <p>hello 2</p>
+            </li> -->
+        </ul>
+    </div>
+</body>
+</html>
