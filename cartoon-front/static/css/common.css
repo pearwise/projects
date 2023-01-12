@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+select{
+    height: 80%;
+    border: 2px solid green;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+option{
+    border-radius: 15px;
+}
+
+button{
+    width: 423px;
+    height: 50px;
+    border: 2px solid green;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    font-size: 15px;
+}
+
+li{
+    width: 240px;
+    height: 320px;
+    border: 2px solid green;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 45px;
+}
+
+li img{
+    width: 238px;
+    height: 318px;
+}
+
+input{
+    width: 360px;
+    height: 45px;
+    filter: brightness(80%);
+}
